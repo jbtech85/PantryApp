@@ -7,3 +7,6 @@ Hoping to publish it as a web app once it's further along.
 
 ## Getting Started
 Going to improve on this section and the following later.  In short, this is a Node project.
+
+Added express, to use app, to use css stylesheets (seems like overkill.  a research project for tomorrow)
+$ npm install express

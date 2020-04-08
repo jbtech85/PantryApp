@@ -2,6 +2,10 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
+const express = require('express');
+var app = express();
+app.use(express.static(__dirname + '/public'));
+
 const server = http.createServer((req,res) => {
     // Buil file path
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);

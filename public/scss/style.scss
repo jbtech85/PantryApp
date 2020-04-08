@@ -1,0 +1,32 @@
+// wish list
+// - function to change text color depending on background
+
+$primary-color:rgb(248, 101, 16);
+$secondary-color:rgb(71, 214, 240);
+
+.body {
+    background:blue;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    li { 
+        padding: 15px; 
+    }
+
+    a {
+        color: set-text-color($primary-color);
+    }
+
+    a:hover {
+       color: $secondary-color; 
+    }
+}
