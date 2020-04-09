@@ -10,3 +10,11 @@ Going to improve on this section and the following later.  In short, this is a N
 
 Added express, to use app, to use css stylesheets (seems like overkill.  a research project for tomorrow)
 npm install express
+
+Using nodemon
+npm i -D nodemon
+// in package.json
+ "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  }

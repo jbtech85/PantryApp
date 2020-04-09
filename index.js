@@ -3,9 +3,10 @@ const path = require('path');
 const fs = require('fs');
 
 const express = require('express');
-var app = express();
+const app = express();
 app.use(express.static(__dirname + '/public'));
 
+/*
 const server = http.createServer((req,res) => {
     // Buil file path
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
@@ -56,7 +57,12 @@ const server = http.createServer((req,res) => {
         }
     })
 });
+/**/
 
 const PORT = process.env.PORT || 5000;
 
-server.listen(PORT,() => console.log(`Server running on port ${PORT}`));
+// pure node js
+//server.listen(PORT,() => console.log(`Server running on port ${PORT}`));
+
+// using express js
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
