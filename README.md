@@ -18,3 +18,7 @@ npm i -D nodemon
     "start": "node index",
     "dev": "nodemon index"
   }
+
+
+  Using Tailwind CSS
+  npm install tailwindcss

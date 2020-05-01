@@ -3,24 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav>
-                <h1>Pantry App</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo"><h1>Pantry</h1></div>
+        
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+
+                <!-- this will be a modal, not a link -->
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
-    Setting up the initial app with Node.
 
-    <!-- cool get started section here -->
+    <div class="container">
+        <div id="ingredientList" class="containerModule">
+            This will be a comma separated list with a button close by to add/remove ingredients
+            for the filter.  Also needs to be a help/info bubble.
+            The filter this goes through (separate from the search filter(s)) will allow "one away,
+            two away" etc.  This feature should be manageable by the user (I only want 1 away, I only
+            want 0 away).
+        </div>
+
+        <div id="recipeSearch" class="containerModule">
+            This will be our search bar
+        </div>
+
+        <div id="recipeList" class="containerModule">
+            This will be our list of recipes (blank until user clicks "Search" or "See All")
+        </div>
+    </div>
+
 </body>
 </html>
